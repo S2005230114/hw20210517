@@ -14,13 +14,33 @@
         }
 
         body {
-            width: 1366px;
+
+            background-color: #f5f1f1;
             display: flex;
             flex-wrap: wrap;
+            width: 1366px;
+            height: 1324px;
             justify-content: center;
             align-items: center;
+            text-align: center;
             min-height: 1vh;
             font-family: "Microsoft YaHei", 微软雅黑;
+        }
+
+        .size1 {
+            width: 1366px;
+            height: 738px;
+        }
+
+        .size2 {
+            width: 1366px;
+            height: 586px;
+        }
+
+        .hang1,
+        .hang2 {
+            display: flex;
+            justify-content: center;
         }
 
         .title1,
@@ -30,25 +50,51 @@
             color: #000000;
             text-align: justify;
             line-height: 54px;
-            left: 107px;
-            width: 180px;
-            height: 74px;
-            background-position-x: 107px;
-            background-position-y: 1522px;
         }
 
-        .Subtitle1,
+        .Subtitle1 {
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            color: #000000;
+            text-align: justify;
+            line-height: 18px;
+            margin-top: 25px;
+        }
+
         .Subtitle2 {
             font-family: PingFangSC-Regular;
             font-size: 12px;
             color: #000000;
             text-align: justify;
             line-height: 18px;
+            margin-top: 25px;
+        }
+
+        .img1 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 0 0 160px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        .img2 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 0 0 160px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
         }
 
         .Nav,
         .Nav_a {
             display: flex;
+            margin: 0;
+            padding: 0;
+            height: 20px;
+            padding-left: 220px;
         }
 
         .Nav0,
@@ -71,16 +117,63 @@
         }
 
         .a1 {
-            background-position-x: 107px;
-            background-position-y: 1608px;
             width: 560px;
             height: 270px;
             float: left;
         }
 
+        .x1,
+        .y1 {
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #FFFFFF;
+            line-height: 22px;
+            width: 370px;
+        }
+
+        .x2,
+        .x3,
+        .x4,
+        .x5,
+        .x6 {
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #1C1F21;
+            line-height: 22px;
+        }
+
+        .y2,
+        .y3,
+        .y4,
+        .y5,
+        .y6 {
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #000000;
+            line-height: 22px;
+        }
+
+        .para2,
+        .para3,
+        .para4,
+        .para5,
+        .para6 {
+            height: 86px;
+            width: 264px;
+            background-color: #ffffff;
+        }
+
+        .para-2,
+        .para-3,
+        .para-4,
+        .para-5,
+        .para-6 {
+            height: 120px;
+            width: 244px;
+            background-color: #ffffff;
+        }
+
         .b1 {
-            background-position-x: 107px;
-            background-position-y: 2346px;
             width: 364px;
             height: 270px;
             float: left;
@@ -96,6 +189,25 @@
             float: left;
         }
 
+        .para7 {
+            display: flex;
+            width: 264px;
+            height: 270px;
+            background: linear-gradient(to bottom, #34E3BC, #15AF7A);
+            margin-right: 100px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 22px;
+        }
+
+        .a7 {
+            margin: auto;
+            width: 48px;
+            height: 48px;
+        }
+
         .b2,
         .b3,
         .b4,
@@ -104,71 +216,134 @@
             width: 120px;
             height: 120px;
         }
-
-        .img {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .green {
-            background-image: linear-gradient(180deg, #34E3BC 0%, #15AF7A 98%);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
-        }
     </style>
 </head>
 
 <body>
-    <div class="title1">
-        <p>机酒自由行</p>
+    <div class="size1">
+        <div class="hang1">
+            <div class="title1">
+                <p>机酒自由行</p>
+            </div>
+            <div class="Subtitle1">
+                <p>挑选全球机票、酒店、邮轮等旅行产品</p>
+            </div>
+            <div class="Nav">
+                <ul class="Nav0">近期好货</ul>
+                <ul class="Nav1">新品汇聚</ul>
+                <ul class="Nav1">定制游</ul>
+                <ul class="Nav1">国内推荐</ul>
+                <ul class="Nav1">优惠机票</ul>
+                <ul class="Nav1">热门海岛</ul>
+                <ul class="Nav1">热卖签证</ul>
+            </div>
+        </div>
+        <div class="img1">
+            <div style="position:relative;">
+                <img class="a1" src="images/组件-机酒配图01.png" alt="">
+                <div class="x1" style="position:absolute; text-align: left; z-index:2; left:20px; top:200px">
+                    [樱花季]天津直飞东京/大阪/名古屋/冲绳/札幌2-30天往返 含税机票【甩尾/多团期】
+                </div>
+            </div>
+            <div>
+                <img class="a2" src="images/组件-机酒配图02.png" alt="">
+                <div class="para2"><span class="x2">北京/上海/南京/杭州直飞巴厘岛5-7<br>天往返含税机票（赠送旅游意外险…</span>
+                </div>
+            </div>
+            <div>
+                <img class="a3" src="images/组件-机酒配图03.png" alt="">
+                <div class="para3"><span class="x3">北京/天津直飞日本东京/大阪/东阪/<br>福冈/名古屋冲
+                        绳/北海道4-7天往返…</span>
+                </div>
+            </div>
+            <div>
+                <img class="a4" src="images/组件-机酒配图04.png" alt="">
+                <div class="para4"><span class="x4">[樱花季] 北京/天津直飞东京/大阪/名<br>古屋/福冈/广岛/北海道/冲绳往返…</span>
+                </div>
+            </div>
+            <div>
+                <img class="a5" src="images/组件-机酒配图05.png" alt="">
+                <div class="para5"><span class="x5">杭州/上海/宁波/义乌直飞越南芽庄/<br>岘港4-6天往返含
+                        税机票（20KG行…</span>
+                </div>
+            </div>
+            <div>
+                <img class="a6" src="images/组件-机酒配图06.png" alt="">
+                <div class="para6"><span class="x6">[赠自由行礼包] 上海/杭州/南京/合<br>肥/宁波/徐州直
+                        飞日本东京/大阪…</span>
+                </div>
+            </div>
+            <div class="para7">
+                <img class="a7" src="images/right.png" />
+                <div class="x7" style="position:absolute; z-index:2; left:1105px; top:370px">
+                    查看更多
+                </div>
+                <div style="position:absolute; z-index:2; left:1080px; top:390px">
+                    机酒自由行产品
+                </div>
+                <div class="x8" style="position:absolute; z-index:2; left:1060px; top:520px">
+                    机票 | 酒店 | 机+酒 | 邮轮
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="Subtitle1">
-        <p>挑选全球机票、酒店、邮轮等旅行产品</p>
-    </div>
-    <div class="Nav">
-        <ul class="Nav0">近期好货</ul>
-        <ul class="Nav1">新品汇聚</ul>
-        <ul class="Nav1">定制游</ul>
-        <ul class="Nav1">国内推荐</ul>
-        <ul class="Nav1">优惠机票</ul>
-        <ul class="Nav1">热门海岛</ul>
-        <ul class="Nav1">热卖签证</ul>
-    </div>
-    <div class="img">
-        <img class="a1" src="images/组件-机酒配图01.png" alt="">
-        <img class="a2" src="images/组件-机酒配图02.png" alt="">
-        <img class="a3" src="images/组件-机酒配图03.png" alt="">
-        <img class="a4" src="images/组件-机酒配图04.png" alt="">
-        <img class="a5" src="images/组件-机酒配图05.png" alt="">
-        <img class="a6" src="images/组件-机酒配图06.png" alt="">
-    </div>
-    <div class="green"></div>
-    <div class="rectangle-a">
 
-    </div>
-
-
-    <div class="title2">
-        <p>当地玩乐</p>
-    </div>
-    <div class="Subtitle2">
-        <p>像当地人一样，体验本土的吃喝玩乐</p>
-    </div>
-    <div class="Nav_a">
-        <ul class="Nav_b">国内</ul>
-        <ul class="Nav_c">日本</ul>
-        <ul class="Nav_c">瑞士</ul>
-        <ul class="Nav_c">新西兰</ul>
-        <ul class="Nav_c">澳大利亚</ul>
-        <ul class="Nav_c">柬埔寨</ul>
-        <ul class="Nav_c">泰国</ul>
-    </div>
-    <div>
-        <img class="b1" src="images/组件-当地玩乐配图01.png" alt="">
-        <img class="b2" src="images/组件-当地玩乐配图02.png" alt="">
-        <img class="b3" src="images/组件-当地玩乐配图03.png" alt="">
-        <img class="b4" src="images/组件-当地玩乐配图04.png" alt="">
-        <img class="b5" src="images/组件-当地玩乐配图05.png" alt="">
-        <img class="b6" src="images/组件-当地玩乐配图06.png" alt="">
+    <div class="size2">
+        <div class="hang2">
+            <div class="title2">
+                <p>当地玩乐</p>
+            </div>
+            <div class="Subtitle2">
+                <p>像当地人一样，体验本土的吃喝玩乐</p>
+            </div>
+            <div class="Nav_a">
+                <ul class="Nav_b">国内</ul>
+                <ul class="Nav_c">日本</ul>
+                <ul class="Nav_c">瑞士</ul>
+                <ul class="Nav_c">新西兰</ul>
+                <ul class="Nav_c">澳大利亚</ul>
+                <ul class="Nav_c">柬埔寨</ul>
+                <ul class="Nav_c">泰国</ul>
+            </div>
+        </div>
+        <div class="img2">
+            <div>
+                <img class="b1" src="images/组件-当地玩乐配图01.png" alt="">
+                <div class="y1" style="position:absolute; text-align: left; z-index:2; left:180px; top:940px">
+                    [亲子佳选]泰国清迈夜间动物园/Night Safari（可选<br>接送；导游；长颈鹿餐厅）<br>城市玩乐
+                </div>
+            </div>
+            <div>
+                <img class="b2" src="images/组件-当地玩乐配图02.png" alt="">
+                <div class="para-2" style="text-align: left;"><span class="y2">[樱花季]
+                        北京/天津直飞东京/大<br>阪/名古屋/福冈/广岛/北海道/冲<br>绳往返…</span>
+                </div>
+            </div>
+            <div>
+                <img class="b3" src="images/组件-当地玩乐配图03.png" alt="">
+                <div class="para-3" style="text-align: left;"><span class="y3">[网红新选] 泰国清迈黑白蓝庙一<br>日游清莱黑庙 白庙 蓝庙
+                        温泉驿<br>站中文导游+酒店接送+餐赠小…</span>
+                </div>
+            </div>
+            <div>
+                <img class="b4" src="images/组件-当地玩乐配图04.png" alt="">
+                <div class="para-4" style="text-align: left;"><span class="y4">[全岛接送+中文导游]
+                        泰国普吉岛<br>+皇帝岛+珊瑚岛一日游双体帆船<br>海钓 [帆船晚会+浮潜]…</span>
+                </div>
+            </div>
+            <div>
+                <img class="b5" src="images/组件-当地玩乐配图05.png" alt="">
+                <div class="para-5" style="text-align: left;"><span class="y5">享行之旅|泰国苏梅岛一日游 越野<br>车丛林环岛之旅
+                        骑大象纳蒙瀑布</span>
+                </div>
+            </div>
+            <div>
+                <img class="b6" src="images/组件-当地玩乐配图06.png" alt="">
+                <div class="para-6" style="text-align: left;"><span class="y6">[可接急单]
+                        泰国普吉岛西蒙<br>Simon人妖秀门票VIP专座近距离<br>与人妖互动合影…</span>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
